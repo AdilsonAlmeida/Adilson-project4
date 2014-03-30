@@ -7,30 +7,50 @@
 
 //global variables
 var stringReturn
+
+
 //String Function 1
 
+var getpattern = function(argpattern) {
 
-
-var getpattern =function(argGetpattern) {
-
-	var stringLength = argGetpattern.length;
+	var stringLength = argpattern.length;
 	
 		for (var i = 11; i = stringLength; i) {
 		
-			if (argGetpattern.substring(0,2) < 1000) {
+			if (argpattern.substring(0,2) < 1000) {
 			
-				if (argGetpattern.charAt(3) = "-") {
+				if (argpattern.charAt(3) = "-") {
 				
-					if (argGetpattern.charAt(7) = "-") {
+					if (argpattern.charAt(7) = "-") {
 					
-					return true};
+					console.log(argpattern + " is a phone number.");
 				};
 			};
 		};
-		return false
-} 
+		console.log(argpattern + " is not a phone number.");
+	};
+}; 
 
+// Is this a URL function
+var getURL = function (argURL) {
 
+	if (argURL.charAt(0) = "h") {
+	
+		if (argURL.charAt(1) = "t") {
+		
+			if (argURL.charAt(2) = "t") {
+			
+				if (argURL.charAt(3) = "p") {
+				
+					console.log( argURL + " is a website.");
+				};
+			};
+		};
+	};
+	console.log( argURL + " is not a website.");
+};
 
 //main code with function calls and output
-stringReturn = argGetpattern("123-456-7890")
+stringReturn = getpattern("123-456-7890")
+
+stringReturn = getURL("http://www.juliashomestyle.com")
